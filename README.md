@@ -9,4 +9,7 @@ A simple multi-page website built using semantic HTML only.
 - Contact
 
 ## Live Demo
-https://YOUR-USERNAME.github.io/basic-html-website/
+https://teatech-tbks.github.io/-basic-html-website/
+
+## Project URL
+https://roadmap.sh/projects/basic-html-website

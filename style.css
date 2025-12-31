@@ -117,10 +117,11 @@ a{
     justify-content: center;
 }
 .articles article{
+    flex:1;
     border: 1px solid black;
     border-radius: 5px;
     padding:  1rem;
-    width: 30%;
+    /* width: 30%; */
     background: var(--card-bg);
 }
  .name{
@@ -138,6 +139,36 @@ main{
 footer{
     text-align: center;
     padding: 1rem;
+}
+@media (max-width: 785px) {
+        .articles{
+        flex-direction: column;
+        align-items: center;
+        }
+        header{
+        flex-direction: column;
+        gap: 10px;
+    }
+        main{
+        justify-content: center;
+        grid-template-areas:
+        "hero"
+        "project"
+        "work"
+        "education"
+        "review";
+    }
+    .hero{
+        border-bottom: 2px solid black;
+    }
+     .project article{
+        background-color: rgb(211, 211, 211);
+        border-bottom: 1px solid black;
+    }
+    .work{
+        border-bottom: 1px solid var(--soft-layer);
+    }
+    
 }
 @media (max-width: 425px){
     header{
@@ -189,6 +220,32 @@ footer{
         align-items: center;
     }
     .articles article{
-        width: 80%;
+        /* width: 80%; */
+
+    }
+}
+@media (max-width: 375px){
+    header{
+        flex-direction: column;
+        gap: 5px;
+      
+    }
+    nav ul{
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+}
+@media (max-width: 320px){
+    header{
+        flex-direction: column;
+        gap: 5px;
+      
+    }
+    nav ul{
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        font-size: 12px;
     }
 }
